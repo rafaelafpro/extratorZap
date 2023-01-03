@@ -1,0 +1,16 @@
+{
+    "name": "ExtratorZap",
+    "version": "1.0",
+    "description": "Extraia números de um grupo do whatsapp",
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/"],
+            "css": ["style.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {    
+        "default_icon": "assets/icon.png"   
+    }, 
+    "manifest_version": 3
+}

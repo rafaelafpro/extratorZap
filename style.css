@@ -1,0 +1,122 @@
+
+
+
+.botao{
+    background-color: #202C33;
+    color: white;
+    padding: 2px 6px;
+}
+
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    user-select: text !important;
+}
+
+
+.plugin-container{
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.close{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.numbers-container{
+    background-color: rgb(235, 235, 235);
+    height: 100%;
+    overflow-y: scroll;
+    color: black;
+    user-select: text !important;
+    padding: 20px;
+    border: 0;
+    margin: 0px 2px;
+    outline: 0;
+}
+
+.numbers-container:focus{
+    border: 0;
+    outline: 0;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+
+#copy, #remove, #csv {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    flex: 1;
+    margin-top: 10px;
+   }
+
+   
+   #copy span, #remove span, #csv span {
+    display: block;
+    margin-left: 0.5em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   #copy svg, #remove svg, #csv svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   /* #copy:hover, #remove:hover, #csv:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   } */
+   
+   #copy:hover svg, #remove:hover svg, #csv:hover svg {
+    transform: translateX(5em) scale(1.1);
+   }
+   
+   #copy:hover span, #remove:hover span, #csv:hover span {
+    transform: translateX(20em);
+   }
+   
+   /* #copy:active, #remove:active, #csv:active {
+    transform: scale(0.95);
+   } */
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
